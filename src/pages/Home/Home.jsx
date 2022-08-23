@@ -2,8 +2,11 @@ import React from 'react';
 import TopBar from '../../components/TopBar/TopBar';
 import { BiChevronDown } from "react-icons/bi";
 import { BsFillPlusCircleFill } from "react-icons/bs";
-import './Home.scss';
+import { FaBirthdayCake } from "react-icons/fa";
+import { RiVideoAddFill, RiMoreFill } from "react-icons/ri";
+import { HiOutlineSearch } from "react-icons/hi";
 import NewsFeed from '../../components/NewsFeed/NewsFeed';
+import './Home.scss';
 
 const Home = () => {
   return (
@@ -108,7 +111,61 @@ const Home = () => {
             <NewsFeed />
            
           </div>
-          <div className="fb-home-right"></div>
+          <div className="fb-home-right">
+            <div className="right-side-one">
+              <p className="title">Birthdays</p>
+              <div className="user-birthday-info">
+                <div className="icon">
+                  <FaBirthdayCake />
+                </div>
+                <div className="user-name"><b>Nahian Khondokar</b> have birthdays today</div>
+              </div>
+              <hr />
+            </div>
+
+            <div className="right-side-active-users">
+              <div className="title-or-icons">
+                <p className="title">Contacts</p>
+                <div className="icons">
+                  <a href=""><RiVideoAddFill /></a>
+                  <a href=""><HiOutlineSearch /></a>
+                  <a href=""><RiMoreFill /></a>
+                </div>
+              </div>
+
+              <div className="activer-user-show">
+                <img className='user-profile' src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-1/283175052_10222301451664954_7874233041930696211_n.jpg?stp=dst-jpg_p200x200&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeE2RT0t2HP8L4hKGobzznK7yLvleOrjCObIu-V46uMI5u3wH-SGNaGS_GhmKVHqsiVd1ep7WS9fbLyzVVtawfOk&_nc_ohc=ICOcMep0s6kAX_fhs5b&_nc_ht=scontent.fdac138-1.fna&oh=00_AT8mgP5gy7HwSp92F2xpVyJfQ7V69X56VBMiB4ZtbJidTg&oe=6308C9B3" alt="" />
+                <div className="user-active-status"></div>
+                <a href="#">Ashraful Haque</a>
+              </div>
+              <div className="activer-user-show">
+                <img className='user-profile' src="https://www.melamorsicata.it/wp-content/uploads/2017/05/Young-Steve-Jobs.jpg" alt=''/>
+                <div className="user-active-status"></div>
+                <a href="#">Steve Jobs</a>
+              </div>
+              <div className="activer-user-show">
+                <img className='user-profile' src="https://assets.entrepreneur.com/content/3x2/2000/20150224165308-jeff-bezos-amazon.jpeg?crop=4:3" alt=''/>
+                <div className="user-active-status"></div>
+                <a href="#">Jeff Bezos</a>
+              </div>
+               <div className="activer-user-show">
+                <img className='user-profile' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%D0%A2%D0%B8%D0%BC_%D0%9A%D1%83%D0%BA_%2802-09-2021%29.jpg/220px-%D0%A2%D0%B8%D0%BC_%D0%9A%D1%83%D0%BA_%2802-09-2021%29.jpg" alt="" />
+                <div className="user-active-status"></div>
+                <a href="#">Bill Gets</a>
+              </div>
+
+              <div className="activer-user-show">
+                <img className='user-profile' src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" />
+                <div className="user-active-status"></div>
+                <a href="#">Elon Musk</a>
+              </div>
+              <div className="activer-user-show">
+                <img className='user-profile' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%D0%A2%D0%B8%D0%BC_%D0%9A%D1%83%D0%BA_%2802-09-2021%29.jpg/220px-%D0%A2%D0%B8%D0%BC_%D0%9A%D1%83%D0%BA_%2802-09-2021%29.jpg" alt="" />
+                <div className="user-active-status"></div>
+                <a href="#">Teem Cock</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

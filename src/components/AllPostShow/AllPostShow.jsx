@@ -78,6 +78,7 @@ class AllPostShow extends Component {
             
         </div>
         <hr />
+
       </div>
     )
   }
