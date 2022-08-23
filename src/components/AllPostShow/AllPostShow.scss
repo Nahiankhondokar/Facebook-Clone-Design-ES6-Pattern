@@ -1,0 +1,78 @@
+// custom shadows
+:root {
+  --small-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --medium-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+// facebook post area
+.fb-all-post-area {
+  display: flex;
+  padding: 15px 10px;
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: var(--small-shadow);
+  flex-direction: column;
+
+  .post-top-part {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .post-img-title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .post-title {
+        display: flex;
+        flex-direction: column;
+
+        .user-name {
+          color: black;
+          font-size: 15px;
+          font-weight: bold;
+        }
+
+        .time-icon {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+
+          .post-time {
+            font-size: 13px;
+            color: #777777;
+          }
+
+          .post-type-icon {
+            color: #777777;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .post-more-option-btn {
+      color: #686868;
+      font-size: 25px;
+    }
+  }
+
+  .post-caption {
+    color: black;
+    font-weight: 400;
+  }
+
+  .fb-post-feature-img-area {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}

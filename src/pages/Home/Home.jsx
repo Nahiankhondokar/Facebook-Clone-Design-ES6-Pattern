@@ -3,6 +3,7 @@ import TopBar from '../../components/TopBar/TopBar';
 import { BiChevronDown } from "react-icons/bi";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import './Home.scss';
+import NewsFeed from '../../components/NewsFeed/NewsFeed';
 
 const Home = () => {
   return (
@@ -103,6 +104,9 @@ const Home = () => {
 
 
             </div>
+
+            <NewsFeed />
+           
           </div>
           <div className="fb-home-right"></div>
         </div>
