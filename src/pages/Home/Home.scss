@@ -2,12 +2,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 50px 0px 0px;
 
   .fb-home-wrapper {
     width: 98%;
     display: flex;
     margin-top: 25px;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 100px;
 
     .fb-home-left {
       display: flex;
@@ -61,7 +63,7 @@
     }
 
     .fb-home-middle {
-      width: 50%;
+      width: 65%;
 
       .fb-store-area {
         display: flex;

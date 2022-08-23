@@ -3,6 +3,8 @@
   background-color: white;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 999;
 
   .fb-topbar-wrapper {
     display: flex;
@@ -10,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 0px;
+    // gap: 50px;
 
     .fb-topbar-left {
       display: flex;
@@ -17,7 +20,8 @@
       align-items: center;
       gap: 10px;
       font-size: 15px;
-      width: 50px;
+      // width: 33%;
+      width: 150px;
 
       .fb-topbar-logo {
         font-size: 35px;

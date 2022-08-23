@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { GiWorld } from "react-icons/gi";
 import { RiMoreFill, RiShareForwardLine } from "react-icons/ri";
-import { AiFillLike } from "react-icons/ai";
-import { BiLike } from "react-icons/bi";
+import { AiFillLike, AiOutlineGif } from "react-icons/ai";
+import { BiLike, BiJoystick } from "react-icons/bi";
 import { VscComment } from "react-icons/vsc";
-import { BsEmojiAngryFill, BsEmojiHeartEyes } from "react-icons/bs";
+import { BsEmojiAngryFill, BsEmojiHeartEyes, BsEmojiSmile, BsCamera } from "react-icons/bs";
 import './AllPostShow.scss';
 
 class AllPostShow extends Component {
@@ -78,7 +78,23 @@ class AllPostShow extends Component {
             
         </div>
         <hr />
+        <div className="fb-post-comment-section">
+            <div className="comment-user-show">
+                <img className='user-profile' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%D0%A2%D0%B8%D0%BC_%D0%9A%D1%83%D0%BA_%2802-09-2021%29.jpg/220px-%D0%A2%D0%B8%D0%BC_%D0%9A%D1%83%D0%BA_%2802-09-2021%29.jpg" alt="" />
+                <div className="user-active-status"></div>
+            </div>
+            <form action="" className="comment-form">
+                <input type="text" className="comment-input" placeholder='Write a comment'/>
 
+                <div className="comment-feature-area">
+                    <BsEmojiSmile />
+                    <BsCamera />
+                    <AiOutlineGif />
+                    <BiJoystick />
+                </div>
+                
+            </form>
+        </div>
       </div>
     )
   }
