@@ -5,6 +5,7 @@ import { BsFillPlusCircleFill } from "react-icons/bs";
 import { FaBirthdayCake } from "react-icons/fa";
 import { RiVideoAddFill, RiMoreFill } from "react-icons/ri";
 import { HiOutlineSearch } from "react-icons/hi";
+import { AiOutlineLogout } from "react-icons/ai";
 import NewsFeed from '../../components/NewsFeed/NewsFeed';
 import Image from './../../../../frontend/src/img/me.jpg';
 import './Home.scss';
@@ -25,26 +26,34 @@ class Home extends Component {
             <div className="fb-left-side-icons">
               <ul>
                 <li>
-                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png?_nc_eui2=AeGjVnqxtdxlDGc8z1x-ZFGpqfpKmA4GtxSp-kqYDga3FO_3RF86S2EtSVV6Y1AzBqHS4TqZLV766W4iM7Fp6v7K" alt="" /> <span className='fb-left-side-text'>Friends</span> 
+                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png?_nc_eui2=AeGjVnqxtdxlDGc8z1x-ZFGpqfpKmA4GtxSp-kqYDga3FO_3RF86S2EtSVV6Y1AzBqHS4TqZLV766W4iM7Fp6v7K" alt="" /> <a href='' className='fb-left-side-text'>Friends</a> 
                 </li>
                 <li>
-                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png?_nc_eui2=AeF4XwHvaL4P8uWOv2fU2ZXxZ3xAUM5_bWpnfEBQzn9tankRf-IaYV5RP3yjhmBt3iB9s1zI5Ls9mgW3mWAOMBfZ" alt="" /> <span>Groups</span>
+                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png?_nc_eui2=AeF4XwHvaL4P8uWOv2fU2ZXxZ3xAUM5_bWpnfEBQzn9tankRf-IaYV5RP3yjhmBt3iB9s1zI5Ls9mgW3mWAOMBfZ" alt="" /> <a href="">Groups</a>
                 </li>
                 <li>
-                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/D2y-jJ2C_hO.png?_nc_eui2=AeFU7z7cc-Lj9YqzLVKnErqh-vsl1K9A-9v6-yXUr0D72-v4_PXNFcGFhJQHLehe7rO3nwSX4NczRr-stpN7FMEA" alt="" /> <span>Marketplace</span>
+                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/D2y-jJ2C_hO.png?_nc_eui2=AeFU7z7cc-Lj9YqzLVKnErqh-vsl1K9A-9v6-yXUr0D72-v4_PXNFcGFhJQHLehe7rO3nwSX4NczRr-stpN7FMEA" alt="" /> <a href="">Marketplace</a>
                 </li>
                 <li>
-                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png?_nc_eui2=AeEyLr1q_xwd8z8C87mbLHzY2NRDTXGHJ53Y1ENNcYcnnV9Yvq9XL7hnXloruBVJ_CZEUUes8Q-G_eiYunWK4cfD" alt="" /> <span>Watch</span>
+                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png?_nc_eui2=AeEyLr1q_xwd8z8C87mbLHzY2NRDTXGHJ53Y1ENNcYcnnV9Yvq9XL7hnXloruBVJ_CZEUUes8Q-G_eiYunWK4cfD" alt="" /> <a href="">Watch</a>
                 </li>
                 <li>
-                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/he-BkogidIc.png?_nc_eui2=AeFFwD_2NYw-OXSwiczx56zUa4YXxTz5jX9rhhfFPPmNf93b4TGJa9dfbCaC1-L0mf3eKD4woht4XDdQ6U3VELjN" alt="" /> <span>Memories</span>
+                  <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/he-BkogidIc.png?_nc_eui2=AeFFwD_2NYw-OXSwiczx56zUa4YXxTz5jX9rhhfFPPmNf93b4TGJa9dfbCaC1-L0mf3eKD4woht4XDdQ6U3VELjN" alt="" /> <a href=''>Memories</a>
+                </li>
+                <li>
+                  <div className="logout-area">
+                    <div className="icon">
+                      <AiOutlineLogout />
+                    </div> 
+                    <a href='#'>Log Out</a>
+                  </div>
                 </li>
                 <li>
                   <div className="fb-left-drop-down">
                     <div className="down-icon">
                       <BiChevronDown /> 
                     </div>
-                    <span>See more</span>
+                    <a href="">See more</a>
                   </div>
                 </li>
               </ul>

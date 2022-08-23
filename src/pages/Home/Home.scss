@@ -39,10 +39,29 @@
           height: 28px;
         }
 
-        span {
+        a {
           font-weight: 300;
           font-size: 15px;
           margin-left: 8px;
+          color: black;
+        }
+
+        .logout-area {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          .icon {
+            color: #177b5f;
+            font-size: 25px;
+          }
+
+          a {
+            font-weight: 500;
+            font-size: 15px;
+            margin-left: 8px;
+            color: black;
+          }
         }
 
         .fb-left-drop-down {
