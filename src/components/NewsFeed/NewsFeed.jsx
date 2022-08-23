@@ -5,6 +5,7 @@ import { BsEmojiLaughing } from "react-icons/bs";
 import { MdVideoCall } from "react-icons/md";
 import PostModal from '../PostModal/PostModal';
 import AllPostShow from '../AllPostShow/AllPostShow';
+import Image from './../../img/me.jpg';
 import './NewsFeed.scss';
 
 
@@ -46,7 +47,7 @@ class NewsFeed extends Component {
         
         <div className="fb-create-post-area shadow-sm">
            <div className="post-area-top-part">
-                <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-1/274738893_3461289187430961_7168829541213425647_n.jpg?stp=c0.25.200.200a_dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeEztD_GheiTODg75pIq0cNlY3neVO8R6i9jed5U7xHqL9tOOL6zdG7EHczE5MyOPETNcrKB8aLHYUl6J4xxke-g&_nc_ohc=AoQfRwLNF-UAX-Y3t12&_nc_ht=scontent.fdac138-1.fna&oh=00_AT_F8u0vh9AxAk1YWcrU9Brjl234w7S7oqYSs5xCTDI71w&oe=630361E0" alt="" />&nbsp; &nbsp;
+                <img src={Image} alt="" />&nbsp; &nbsp;
                 <div onClick={ handlePostModalShow } className="fb-post-create-btn">
                     <span>Whta's on your mind, Nahian ?</span>
                 </div>
@@ -112,9 +113,9 @@ class NewsFeed extends Component {
             </div>
         </div>
         
-        <div className="fb-create-news-area">
+        
             <AllPostShow />
-        </div>
+        
     </div>
     )
   }

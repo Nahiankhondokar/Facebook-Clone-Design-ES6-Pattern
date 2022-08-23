@@ -6,6 +6,7 @@ import { FaBirthdayCake } from "react-icons/fa";
 import { RiVideoAddFill, RiMoreFill } from "react-icons/ri";
 import { HiOutlineSearch } from "react-icons/hi";
 import NewsFeed from '../../components/NewsFeed/NewsFeed';
+import Image from './../../../../frontend/src/img/me.jpg';
 import './Home.scss';
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
         <div className="fb-home-wrapper">
           <div className="fb-home-left">
             <div className='fb-account'>
-              <img className='fb-acc-img' src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-1/274738893_3461289187430961_7168829541213425647_n.jpg?stp=c0.5.40.40a_cp0_dst-jpg_p40x40&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeEztD_GheiTODg75pIq0cNlY3neVO8R6i9jed5U7xHqL9tOOL6zdG7EHczE5MyOPETNcrKB8aLHYUl6J4xxke-g&_nc_ohc=uXzh4BzkJ0UAX_-X5Zt&_nc_ht=scontent.fdac138-1.fna&oh=00_AT9hdYU7EYQy9Z38LS10R332CV4YMEg4WGQkrTd264t_9Q&oe=630361E0" alt="" /> 
+              <img className='fb-acc-img' src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-1/274738893_3461289187430961_7168829541213425647_n.jpg?stp=c0.5.40.40a_cp0_dst-jpg_p40x40&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeEztD_GheiTODg75pIq0cNlY3neVO8R6i9jed5U7xHqL9tOOL6zdG7EHczE5MyOPETNcrKB8aLHYUl6J4xxke-g&_nc_ohc=9VxKoKdYWKQAX8fCAlx&tn=uwcbJkrwGo2JzeDW&_nc_ht=scontent.fdac138-1.fna&oh=00_AT81pf9cAJOU_D1sKBm2wWD1igWWZ4WftPsMJbiZ397aJw&oe=630950A0" alt="" /> 
               <span className='fb-acc-user-name'>Nahian&nbsp;Khondokar</span>
             </div>
 
@@ -49,13 +50,14 @@ const Home = () => {
             </div>
             <hr />
           </div>
+
           <div className="fb-home-middle">
             <div className="fb-store-area">
 
               {/* user story area */}
               <div className="fb-store-items">
                 <div className="store-image-area">
-                  <img className='store-image' src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-1/274738893_3461289187430961_7168829541213425647_n.jpg?stp=c0.25.200.200a_dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeEztD_GheiTODg75pIq0cNlY3neVO8R6i9jed5U7xHqL9tOOL6zdG7EHczE5MyOPETNcrKB8aLHYUl6J4xxke-g&_nc_ohc=AoQfRwLNF-UAX-Y3t12&_nc_ht=scontent.fdac138-1.fna&oh=00_AT_F8u0vh9AxAk1YWcrU9Brjl234w7S7oqYSs5xCTDI71w&oe=630361E0" alt="" />
+                  <img className='store-image' src={Image} alt="" />
                 </div>
                 <div className="user-name">
                   <div className="store-icon">
@@ -122,6 +124,7 @@ const Home = () => {
             <NewsFeed />
            
           </div>
+
           <div className="fb-home-right">
             <div className="right-side-one">
               <p className="title">Birthdays</p>
