@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { GiWorld } from "react-icons/gi";
-import { RiMoreFill } from "react-icons/ri";
-import { BsEmojiLaughingFill, BsEmojiAngryFill, BsEmojiFrownFill } from "react-icons/bs";
+import { RiMoreFill, RiShareForwardLine } from "react-icons/ri";
+import { AiFillLike } from "react-icons/ai";
+import { BiLike } from "react-icons/bi";
+import { VscComment } from "react-icons/vsc";
+import { BsEmojiAngryFill, BsEmojiHeartEyes } from "react-icons/bs";
 import './AllPostShow.scss';
 
 class AllPostShow extends Component {
@@ -29,7 +32,52 @@ class AllPostShow extends Component {
             <img src="http://www.ealingu3a.org.uk/wp-content/uploads/2014/03/Assignment-Help.png" alt="" />
         </div>
 
+        <div className="fb-post-like-comment-area">
+            <div className="like-comment-count">
+                <div className="left-side">
+                    <div className="emoji">
+                        <div className="emoji-one">
+                            <BsEmojiAngryFill />
+                        </div>
+                        <div className="emoji-two">
+                            <AiFillLike />
+                        </div>
+                        <div className="emoji-three">
+                            <BsEmojiHeartEyes />
+                        </div>
+                    </div>
+                    <div className="like-people">269k likes</div>
+                </div>
+                <div className="right-side">
+                    <a href="#">9.1k Comments &nbsp;<span>3.1k Shares</span></a>
+                </div>
+                
+            </div>
+            <hr />
+        </div>
 
+        <div className="fb-post-like-comment-btn">
+            <div className="like-btn">
+                <div className="icon">
+                    <BiLike />
+                </div>
+                <p>Like</p>
+            </div>
+            <div className="comment-btn">
+                <div className="icon">
+                    <VscComment />
+                </div>
+                <p>Comment</p>
+            </div>
+            <div className="share-btn">
+                <div className="icon">
+                    <RiShareForwardLine />
+                </div>
+                <p>Share</p>
+            </div>
+            
+        </div>
+        <hr />
       </div>
     )
   }
