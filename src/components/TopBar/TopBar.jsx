@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BsFacebook } from "react-icons/bs";  
 import { AiOutlineSearch, AiFillHome } from "react-icons/ai";  
 import { FiMonitor } from "react-icons/fi";  
@@ -10,9 +10,10 @@ import { MdNotifications, MdAccountCircle } from "react-icons/md";
 import Image from './../../img/me.jpg'; 
 import './TopBar.scss';
 
-const TopBar = () => {
-  return (
-    <div className='fb-topbar-container shadow-sm'>
+class TopBar extends Component {
+  render() {
+    return (
+        <div className='fb-topbar-container shadow-sm'>
         <div className="fb-topbar-wrapper">
             <div className="fb-topbar-left">
                 <div className="fb-topbar-logo">
@@ -52,7 +53,10 @@ const TopBar = () => {
             </div>
         </div>
     </div>
-  )
+    )
+  }
 }
 
 export default TopBar;
+
+

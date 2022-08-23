@@ -193,7 +193,7 @@ class AllPostShow extends Component {
             <div className="post-img-title">
                     <img src="https://www.melamorsicata.it/wp-content/uploads/2017/05/Young-Steve-Jobs.jpg" alt="" />
                     <div className="post-title">
-                        <a href="#" className="user-name">Ashraful Haque</a>
+                        <a href="#" className="user-name">Steve Jobs</a>
                         <div className="time-icon">
                             <div className="post-time">6d</div>
                             <div className="post-type-icon" title='Public'><GiWorld /></div>
@@ -204,7 +204,7 @@ class AllPostShow extends Component {
                     <RiMoreFill />
                 </a>
             </div>
-            <div className="post-caption">Your Assignments are here...</div>
+            <div className="post-caption">Create your imagination...</div>
             <br />
             <div className="fb-post-feature-img-area">
                 <img src="https://1734811051.rsc.cdn77.org/data/images/full/376289/steve-jobs-delivers-keynote-speech-at-macworld-conference-expo.jpg" alt="" />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import TopBar from '../../components/TopBar/TopBar';
 import { BiChevronDown } from "react-icons/bi";
 import { BsFillPlusCircleFill } from "react-icons/bs";
@@ -9,8 +9,9 @@ import NewsFeed from '../../components/NewsFeed/NewsFeed';
 import Image from './../../../../frontend/src/img/me.jpg';
 import './Home.scss';
 
-const Home = () => {
-  return (
+class Home extends Component {
+  render() {
+    return (
     <>
     <TopBar />
       <div className="fb-home-container">
@@ -183,7 +184,8 @@ const Home = () => {
         </div>
       </div>
     </>
-  )
+    )
+  }
 }
 
 export default Home;
