@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BsPlusSquare } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 import Register from '../Register/Register';
 import './Login.scss'; 
 
@@ -52,8 +53,9 @@ class Login extends Component {
                   <input className='login-form-input'  type="text" placeholder='Password'/>
                   <button type='submit' className='login-form-sbmt-btn'>Log In</button>
                 </form>
-                <a href='#' className='forgot-pass'>Forgotten password ?
-                </a>
+                <Link to="/reset-password" className='forgot-pass'>
+                  Forgotten password ?
+                </Link>
                 <hr />
                 <div className="create-new-acc-btn-area">
                   <button type="button" onClick={ handleRegModalShow } className='new-acc-btn'>Create New Account</button>
@@ -134,7 +136,7 @@ class Login extends Component {
           </ul>
         </div>
       </div>
-    </div>
+      </div>
   
   
       </>
